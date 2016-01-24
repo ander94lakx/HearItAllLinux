@@ -139,16 +139,27 @@ void initialize(FILE *file)
 {
     char* dateTime = currentDateTime();
     fprintf(file, "\n\n");
-    fprintf(file, "**********************************************************\n");
-    fprintf(file, "****               HearItAll Keylogger                ****\n");
-    fprintf(file, "****                 (Linux version)                  ****\n");
-    fprintf(file, "****--------------------------------------------------****\n");
-    fprintf(file, "****                                                  ****\n");
-    fprintf(file, "****    Created by: Ander Granado                     ****\n");
-    fprintf(file, "****                                                  ****\n");
-    fprintf(file, "**********************************************************\n");
-    fprintf(file, "****   Timestamp: %s            ****\n", dateTime);
-    fprintf(file, "**********************************************************\n\n");
+	fprintf(file, "|***********************************************************|\n");
+	fprintf(file, "|   _   _                       _____  _       ___   _  _   |\n");
+	fprintf(file, "|  | | | |                     |_   _|| |     / _ \\ | || |  |\n");
+	fprintf(file, "|  | |_| |  ___   __ _  _ __     | |  | |_   / /_\\ \\| || |  |\n");
+	fprintf(file, "|  |  _  | / _ \\ / _` || '__|    | |  | __|  |  _  || || |  |\n");
+	fprintf(file, "|  | | | ||  __/| (_| || |      _| |_ | |_   | | | || || |  |\n");
+	fprintf(file, "|  \\_| |_/ \\___| \\__,_||_|      \\___/  \\__|  \\_| |_/|_||_|  |\n");
+	fprintf(file, "|                                                           |\n");
+	fprintf(file, "|                                                           |\n");
+	fprintf(file, "|                      Windows version                      |\n");
+	fprintf(file, "|                                                           |\n");
+	fprintf(file, "|***********************************************************|\n");
+	fprintf(file, "|                                                           |\n");
+	fprintf(file, "| Created by: Ander Granado                                 |\n");
+	fprintf(file, "|                                                           |\n");
+	fprintf(file, "| Avaiable here:                                            |\n");
+	fprintf(file, "|      https://github.com/ander94lakx/HearItAllLinux        |\n");
+	fprintf(file, "|                                                           |\n");
+	fprintf(file, "| Session timestamp: " + dateTime + "                    |\n");
+	fprintf(file, "|                                                           |\n");
+	fprintf(file, "|***********************************************************|\n\n");
 }
 
 char* currentDateTime(void)
